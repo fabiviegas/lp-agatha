@@ -1,0 +1,56 @@
+// out: false
+
+@import "__pallete.less";
+
+.page__footer {
+    background-image: url('../img/bg-2.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+    .footer__content {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 7px;
+    }
+
+    address {
+        font-size: 18px;
+        font-weight: 500;
+
+        a {
+            
+            text-decoration: underline;
+            padding-top: 7px;
+        }
+    }
+    .footer_copyright {
+        font-size: 14px;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    .is--desktop {
+        display: none;
+    }
+
+    @media screen and(min-width: 992px) {
+        .is--mobile {
+            display: none;
+        }
+
+        .is--desktop {
+            display: block;
+
+            .copyrights {
+
+                padding-bottom: 30px; 
+
+                .mussi__copyrights {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    
+}
