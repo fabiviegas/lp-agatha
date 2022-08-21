@@ -17,7 +17,7 @@
         font-family: 'Cormorant', serif;
         font-weight: 600;
         text-transform: uppercase;
-        letter-spacing: 14%;
+        letter-spacing: 3px;
         color: @gold;
 
         @media screen and (min-width: 768px) {
@@ -31,7 +31,7 @@
         font-family: 'Cormorant', serif;
         font-weight: 600;
         text-transform: uppercase;
-        letter-spacing: 14%;
+        letter-spacing: 3px;
     }
 
     p {
@@ -53,14 +53,14 @@
         font-family: 'Cormorant', serif;
         font-weight: 600;
         text-transform: uppercase;
-        letter-spacing: 14%;
-        color: @darkgold;
+        letter-spacing: 3px;
+        color: @gold;
 
         span {
            
             font-family: 'Catamaran', sans-serif;
             display: block;
-            color: @gold;
+            color: @darkgold;
             font-size: 36px;
             font-weight: 700;
             margin-top: 30px;
@@ -75,8 +75,12 @@
 
     .card {
 
-        height: 270px;
-    
+        height: 264px;
+        max-width: 300px;
+
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+        margin: 5px 5px;
+           
         .card-body {
             padding: 30px 20px 30px 20px;
         
@@ -121,206 +125,173 @@
 
     background-image: linear-gradient(rgb(246, 227, 207), rgb(255, 249, 249));
 
-    .about__content {
-        h2 {
+    .container {
+        .about__content {
+            h2 {
+                color: @gold;
+                font-family: 'Cormorant', serif;
+                font-size: 20px;
+                font-weight: 600;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                
+                .title__content {
+                    color: @darkgold;
+                    font-family: 'Catamaran', sans-serif;
+                    font-size: 32px;
+                    font-weight: 500;
+                    letter-spacing: normal;
+                    text-transform: none;
+                    line-height: 40px;
+                }
+            }
+            
+            p {
+                color: @brown;
+                font-family: 'Catamaran', sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 25px;
+                
+            }
+
+            .infos {
+                color: @vintagePink;
+                padding-bottom: 40px;
+                display: flex;
+                justify-content: space-between;
+                font-family: 'Catamaran', sans-serif;
+
+                    .info__highlight {
+
+                        padding-top: 20px;
+                    
+                        .highlight {
+                            font-size: 46px;
+                            font-weight: 800;
+                            line-height: 20px;
+                        }
+
+                        .description {
+                            display: block;
+                            font-size: 26px;
+                            font-weight: 500;
+                            letter-spacing: 2.5px;
+                        }
+                    }
+            }            
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .container {
+            .about__content {
+
+                margin-top: 5rem;
+                margin-bottom: 5rem;
+                padding: 0;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+
+                h2 {
+                    font-size: 20px;
+                    font-weight: 600;
+                    letter-spacing: 3px;
+
+                    .title__content {
+                        font-weight: 500;
+                        font-size: 38px;
+                        line-height: 55px;
+                        letter-spacing: normal;
+                    }
+                }
+
+                .infos {
+                    .info__content {
+                        flex-direction: row;
+                    }
+                }    
+                
+                .btn {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+}
+
+.about__me {
+
+    background-image: linear-gradient( rgb(202, 157, 132), rgb(220, 185, 166));
+
+    .container {
+        background-image: linear-gradient(rgb(255, 249, 249) 100%, rgb(246, 227, 207) 0%);
+        background-size: 95%;
+        background-repeat: no-repeat;
+
+        .aboutme__title {
             color: @gold;
-            font-family: 'Cormorant' serif;
+            font-family: 'Cormorant', serif;
             font-size: 20px;
             font-weight: 600;
-            letter-spacing: 14%;
+            letter-spacing: 3px;
             text-transform: uppercase;
             
             .title__content {
                 color: @darkgold;
                 font-family: 'Catamaran', sans-serif;
-                font-size: 36px;
-                font-weight: 500;
+                font-size: 32px;
+                font-weight: 600;
                 letter-spacing: normal;
                 text-transform: none;
-                line-height: 40px;
+                line-height: 45px;
             }
         }
         
-        p {
+        .me__content {
             color: @brown;
             font-family: 'Catamaran', sans-serif;
             font-size: 18px;
             font-weight: 400;
-            line-height: 25px;
+            line-height: 30px;
             
         }
 
-        .infos {
-            color: @gold;
-            padding-bottom: 40px;
-            display: flex;
-            justify-content: space-between;
+        .photo__agatha {
+            margin-top: -75px;
+            margin-bottom: 20px;
+         }
 
-                .info__highlight {
+        @media screen and (min-width: 768px) {
+            h2 {
+                font-size: 20px;
+                font-weight: 600;
+                letter-spacing: 3px;
 
-                    padding-top: 20px;
-                
-                    .highlight {
-                        font-size: 46px;
-                        font-weight: 900;
-                        line-height: 20px;
-                    }
-
-                    .description {
-                        display: block;
-                        font-size: 26px;
-                        font-weight: 400;
-                        letter-spacing: 2.52px;
-                    }
-                }
-        }
-
-        .btn {
-            border-radius: 0;
-            background-image: linear-gradient(105deg, rgb(222, 170, 116) 0%, rgb(185, 134, 80) 100%);
-            color: white;
-            font-size: 18px;
-            font-weight: 700;
-            padding: 20px 44px;
-            text-transform: uppercase;
-            margin-bottom: 40px;
-            
-        }
-    }
-
-    @media screen and (min-width: 768px) {
-
-        .about__content {
-
-            margin-top: 5rem;
-            margin-bottom: 5rem;
-            padding: 0;
-            flex-direction: row-reverse;
-            justify-content: space-between;
-           
-
-            .title__content {
-                font-size: 46px;
-                line-height: 55px;
-            }
-
-            .infos {
-                .info__content {
-                    flex-direction: row;
-                }
-                
-            }
-
-            .btn {
-                margin-bottom: 0;
-            }
-        }
-    }
-}
-
-.team {
-    background-color: black;
-
-    .container {
-        h2 {
-            color: @gold;
-            font-size: 18px;
-            font-weight: 300;
-            letter-spacing: 7.2px;
-            text-transform: uppercase;
-            padding-bottom: 30px;
-
-            .title__about {
-                display: block;
-                color: white;
-                font-size: 36px;
-                font-weight: 800;
-                letter-spacing: normal;
-                text-transform: none;
-                line-height: 40px;
-                padding-top: 10px; 
-
-                @media screen and (min-width: 768px) {
-                    font-size: 46px;
-                }
-            }
-        }
-
-        .team__carousel {
-            .card__team {
-
-                max-width: 369px;
-
-                .photo {
-                    padding: 7px 7px 0 7px;
-                }
-                .card-title {
-                    color: black;
-                    font-size: 18px;
-                    font-weight: 800;
-                    
-                }
-                .card-subtitle {
-                    color: @gold;
-                    font-size: 12px;
-                    font-weight: 600;
-                    letter-spacing: 1.2px;
-                    text-transform: uppercase;
-                    padding-bottom: 7px;
-                }
-                .card-text {
-                    color: black;
-                    font-size: 12px;
-                    font-weight: 400;
-                    line-height: 20px;
-                }
-                .card-link {
-                    color: black;
-                    font-size: 12px;
+                .title__content {
                     font-weight: 500;
-
-                    .icon {
-                        padding-right: 10px;
-                    }
+                    font-size: 38px;
+                    line-height: 55px;
+                    letter-spacing: normal;
                 }
             }
-        
         }
- 
-    }
-    @media screen and (min-width: 768px) {
-        padding-top: 49px;
-        padding-bottom: 40px;
     }
 }
 
 .cta {
-    background-image: linear-gradient(103deg, rgb(222, 170, 116) 0%, rgb(185, 134, 80) 100%);
+    background-color: @easyPink;
+    background-image: linear-gradient(rgba(220, 185, 166, 0.1), rgba(164, 133, 92, 0.6)), url('../img/photo-conf.webp'), url('../img/bg-logo.svg'), ;
+    background-repeat: no-repeat;
+    background-position: top, left, right bottom;
+    background-size: contain, 550px, 380px;
     .container {
-        .title__cta {
-            color: black;
-            font-size: 36px;
+        .cta__text {
+            font-family: 'Catamaran', sans-serif;
+            font-size: 32px;
             font-weight: 800;
-            line-height: 40px;
-            padding-bottom: 20px;
-        }
-        .btn2 {
-            display: inline-block;
-            background-color: white;
-            color: @gold;
-            font-size: 18px;
-            font-weight: 800;
-            padding: 20px 35px;
-            text-transform: uppercase;
-            min-width: 264px;
-        }
-
-        @media screen and (min-width: 768px) {
-            
-            .cta__button {
-                display: flex;
-                justify-content: flex-end;
-            }
+            color: @darkgold;
         }
     }
 }
