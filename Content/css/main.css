@@ -386,20 +386,24 @@ nav {
     margin-bottom: 0;
   }
 }
-.owl-carousel.owl-theme.services__carousel img {
+.owl-carousel.owl-theme.services__carousel img,
+.owl-carousel.owl-theme.test__carousel img {
   max-width: fit-content;
 }
-.owl-carousel.owl-theme.services__carousel .owl-dots {
+.owl-carousel.owl-theme.services__carousel .owl-dots,
+.owl-carousel.owl-theme.test__carousel .owl-dots {
   margin-top: 29px;
 }
-.owl-carousel.owl-theme.services__carousel .owl-dots .owl-dot span {
+.owl-carousel.owl-theme.services__carousel .owl-dots .owl-dot span,
+.owl-carousel.owl-theme.test__carousel .owl-dots .owl-dot span {
   width: 10px;
   height: 10px;
   background-color: #f6e3cf;
   border: 1px solid #bb8261;
   border-radius: 50px;
 }
-.owl-carousel.owl-theme.services__carousel .owl-dots .owl-dot.active span {
+.owl-carousel.owl-theme.services__carousel .owl-dots .owl-dot.active span,
+.owl-carousel.owl-theme.test__carousel .owl-dots .owl-dot.active span {
   background-color: #bb8261;
 }
 .owl-carousel.owl-theme.about__carousel img {
@@ -739,4 +743,48 @@ nav {
   font-size: 32px;
   font-weight: 800;
   color: #523e27;
+}
+.testimonials {
+  background-color: #fdf4f4;
+}
+.testimonials .test__title {
+  color: #8f7241;
+  font-family: 'Cormorant', serif;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.testimonials .test__icon {
+  margin-bottom: -15px;
+  margin-left: 35px;
+  z-index: 1;
+}
+.testimonials .testimonial__card {
+  background-color: #fff9f9;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 50px 35px 50px 35px;
+  z-index: 10;
+  width: 318px;
+  height: 550px;
+}
+.testimonials .testimonial__card .test__text {
+  font-family: 'Catamaran', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #523e27;
+  letter-spacing: 2.5px;
+}
+.testimonials .testimonial__card .test__name {
+  font-family: 'Catamaran', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: #8f7241;
+  text-transform: uppercase;
+  letter-spacing: -1.5px;
+  margin-bottom: 0;
+}
+.testimonials .testimonial__card .test__name .test__city {
+  color: #ca9d84;
+  letter-spacing: normal;
 }

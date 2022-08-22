@@ -295,3 +295,54 @@
         }
     }
 }
+
+.testimonials {
+    background-color: rgb(253, 244, 244);
+
+    .test__title {
+        color: @gold;
+        font-family: 'Cormorant', serif;
+        font-size: 32px;
+        font-weight: 600;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+
+    .test__icon {
+        margin-bottom: -15px;
+        margin-left: 35px;
+        z-index: 1;
+    }
+
+    .testimonial__card {
+        background-color: @white;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        padding: 50px 35px 50px 35px;
+        z-index: 10;
+        width: 318px; 
+        height: 550px;     
+
+        .test__text {
+            font-family: 'Catamaran', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            color: @darkgold;
+            letter-spacing: 2.5px;
+        }
+
+        .test__name {
+            font-family: 'Catamaran', sans-serif;
+            font-size: 22px;
+            font-weight: 800;
+            color: @gold;
+            text-transform: uppercase;
+            letter-spacing: -1.5px;
+            margin-bottom: 0;
+
+            .test__city {
+                color: @pink;
+                letter-spacing: normal;
+            }
+        }
+    }
+}
