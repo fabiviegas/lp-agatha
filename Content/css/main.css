@@ -41,6 +41,9 @@ ul {
   list-style-type: none;
   padding-inline-start: 0;
 }
+p {
+  margin-bottom: 15px;
+}
 section,
 article,
 aside,
@@ -237,6 +240,7 @@ nav {
 }
 .btn__pink {
   display: inline-block;
+  width: fit-content;
   border-radius: 0;
   background-image: linear-gradient(180deg, #bb8261 0%, #ca9d84 100%);
   color: #fff9f9;
@@ -288,6 +292,7 @@ nav {
   text-transform: uppercase;
   width: 562px;
   letter-spacing: 2.5px;
+  max-width: 330px;
 }
 .button__white:hover {
   background-color: #8f7241;
@@ -296,21 +301,19 @@ nav {
 .page__header {
   position: absolute;
   width: 100%;
+  z-index: 3000;
 }
 .page__header .is--mobile .container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   margin-top: 30px;
 }
-.page__header .is--mobile .container .logo__header {
-  padding-left: 15px;
+.page__header .is--mobile .container .logo__header img {
+  width: 125px;
 }
 .page__header .is--mobile .container .navbar__hamburguer {
-  margin-right: 15px;
   background-color: #f6e3cf;
-  padding: 11px;
+}
+.page__header .is--mobile .container .navbar__hamburguer img {
+  width: 30px;
 }
 .page__header .is--mobile .container .navbar__overlay {
   z-index: 3000;
@@ -475,23 +478,34 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.page__footer .footer__content {
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 7px;
+.page__footer .is--mobile .social__links {
+  width: 200px;
 }
-.page__footer address {
-  font-size: 18px;
-  font-weight: 500;
+.page__footer .is--mobile .social__links a:hover {
+  filter: brightness(0) saturate(100%) invert(40%) sepia(5%) saturate(4239%) hue-rotate(359deg) brightness(109%) contrast(78%);
 }
-.page__footer address a {
+.page__footer .is--mobile .footer__content {
+  font: 500 18px 'Catamaran', sans-serif;
+  color: #29231b;
+}
+.page__footer .is--mobile .address address,
+.page__footer .is--mobile .address a {
+  font: 500 18px 'Catamaran', sans-serif;
+  color: #29231b;
+}
+.page__footer .is--mobile .address a {
   text-decoration: underline;
-  padding-top: 7px;
 }
-.page__footer .footer_copyright {
-  font-size: 14px;
-  font-weight: 400;
-  margin: 0;
+.page__footer .is--mobile .address a:hover {
+  color: #8f7241;
+}
+.page__footer .is--mobile .copyrights .agatha__copyrights {
+  margin-bottom: 0;
+  font: 400 16px 'Catamaran', sans-serif;
+  color: #29231b;
+}
+.page__footer .is--mobile .copyrights .logo__ark {
+  width: 120px;
 }
 .page__footer .is--desktop {
   display: none;
@@ -503,18 +517,45 @@ nav {
   .page__footer .is--desktop {
     display: block;
   }
+  .page__footer .is--desktop .footer__contact .footer__content {
+    font: 500 20px 'Catamaran', sans-serif;
+    color: #29231b;
+  }
+  .page__footer .is--desktop .social__footer .social__links {
+    width: 200px;
+  }
+  .page__footer .is--desktop .social__footer .social__links a:hover {
+    filter: brightness(0) saturate(100%) invert(40%) sepia(5%) saturate(4239%) hue-rotate(359deg) brightness(109%) contrast(78%);
+  }
+  .page__footer .is--desktop .address address,
+  .page__footer .is--desktop .address a {
+    font: 500 20px 'Catamaran', sans-serif;
+    color: #29231b;
+  }
+  .page__footer .is--desktop .address a {
+    text-decoration: underline;
+  }
+  .page__footer .is--desktop .address a:hover {
+    color: #8f7241;
+  }
   .page__footer .is--desktop .copyrights {
     padding-bottom: 30px;
   }
   .page__footer .is--desktop .copyrights .agatha__copyrights {
     margin-bottom: 0;
+    font: 500 16px 'Catamaran', sans-serif;
+    color: #29231b;
   }
-  .page__footer .is--desktop .copyrights .logo__ark {
+  .page__footer .is--desktop .copyrights .ark {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .page__footer .is--desktop .copyrights .ark .logo__ark {
     width: 100px;
   }
 }
 .banner {
-  background-image: url('../img/background.webp');
+  background-image: url('../img/background-mobile.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   color: #523e27;
@@ -545,6 +586,11 @@ nav {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+}
+@media screen and (min-width: 768px) {
+  .banner {
+    background-image: url('../img/background.webp');
+  }
 }
 .services {
   background-color: #f6e3cf;
@@ -611,50 +657,83 @@ nav {
 .about {
   background-image: linear-gradient(#f6e3cf, #fff9f9);
 }
-.about .container .about__content h2 {
+.about .container .about__content .content {
+  align-items: center;
+}
+.about .container .about__content .content h2 {
   color: #8f7241;
   font-family: 'Cormorant', serif;
   font-size: 20px;
   font-weight: 600;
   letter-spacing: 3px;
   text-transform: uppercase;
+  text-align: center;
 }
-.about .container .about__content h2 .title__content {
+.about .container .about__content .content h2 .title__content {
   color: #523e27;
   font-family: 'Catamaran', sans-serif;
   font-size: 32px;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: normal;
   text-transform: none;
   line-height: 40px;
 }
-.about .container .about__content p {
+@media screen and (min-width: 768px) {
+  .about .container .about__content .content h2 {
+    text-align: left;
+  }
+}
+.about .container .about__content .content p {
   color: #29231b;
   font-family: 'Catamaran', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 25px;
+  text-align: center;
 }
-.about .container .about__content .infos {
+@media screen and (min-width: 768px) {
+  .about .container .about__content .content p {
+    text-align: left;
+  }
+}
+.about .container .about__content .content .infos {
   color: #bb8261;
   padding-bottom: 40px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   font-family: 'Catamaran', sans-serif;
 }
-.about .container .about__content .infos .info__highlight {
+.about .container .about__content .content .infos .info__highlight {
   padding-top: 20px;
+  text-align: center;
 }
-.about .container .about__content .infos .info__highlight .highlight {
+.about .container .about__content .content .infos .info__highlight .highlight {
   font-size: 46px;
   font-weight: 800;
   line-height: 20px;
 }
-.about .container .about__content .infos .info__highlight .description {
+.about .container .about__content .content .infos .info__highlight .description {
   display: block;
   font-size: 26px;
   font-weight: 500;
   letter-spacing: 2.5px;
+}
+@media screen and (min-width: 768px) {
+  .about .container .about__content .content .infos .info__highlight {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about .container .about__content .content .infos {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about .container .about__content .content {
+    align-items: flex-start;
+  }
 }
 @media screen and (min-width: 768px) {
   .about .container .about__content {
@@ -670,7 +749,7 @@ nav {
     letter-spacing: 3px;
   }
   .about .container .about__content h2 .title__content {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 38px;
     line-height: 55px;
     letter-spacing: normal;
@@ -687,8 +766,9 @@ nav {
 }
 .about__me .container {
   background-image: linear-gradient(#fff9f9 100%, #f6e3cf 0%);
-  background-size: 95%;
+  background-size: 95% 80%;
   background-repeat: no-repeat;
+  background-position: center top 0;
 }
 .about__me .container .aboutme__title {
   color: #8f7241;
@@ -702,7 +782,7 @@ nav {
   color: #523e27;
   font-family: 'Catamaran', sans-serif;
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: normal;
   text-transform: none;
   line-height: 45px;
@@ -725,24 +805,40 @@ nav {
     letter-spacing: 3px;
   }
   .about__me .container h2 .title__content {
-    font-weight: 500;
     font-size: 38px;
     line-height: 55px;
     letter-spacing: normal;
   }
 }
+@media screen and (min-width: 768px) {
+  .about__me .container {
+    background-size: 95%;
+  }
+}
 .cta {
   background-color: #dcb9a6;
-  background-image: linear-gradient(rgba(220, 185, 166, 0.1), rgba(164, 133, 92, 0.6)), url('../img/photo-conf.webp'), url('../img/bg-logo.svg');
+  background-image: url('../img/photo-conf.webp'), url('../img/bg-logo.svg');
   background-repeat: no-repeat;
-  background-position: top, left, right bottom;
-  background-size: contain, 550px, 380px;
+  background-position: top 0 left 15px, bottom 0 right -30px;
+  background-size: 330px, 200px;
 }
 .cta .container .cta__text {
   font-family: 'Catamaran', sans-serif;
   font-size: 32px;
   font-weight: 800;
   color: #523e27;
+  padding-top: 302px;
+}
+@media screen and (min-width: 768px) {
+  .cta .container .cta__text {
+    padding-top: 48px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cta .container {
+    background-image: linear-gradient(rgba(220, 185, 166, 0.1), rgba(164, 133, 92, 0.6)), url('../img/photo-conf.webp'), url('../img/bg-logo.svg');
+    background-size: 550px, 380px;
+  }
 }
 .testimonials {
   background-color: #fdf4f4;

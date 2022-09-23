@@ -6,25 +6,26 @@
 
     position: absolute;
     width: 100%;
+    z-index: 3000;
 
     .is--mobile {
 
         .container {
 
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
             margin-top: 30px;
         
             .logo__header {
-                padding-left: 15px;
+                img {
+                    width: 125px;
+                }
             }
 
             .navbar__hamburguer {
-                margin-right: 15px;
                 background-color: @softPink;
-                padding: 11px;
+
+                img {
+                    width: 30px;
+                }
             }
 
             .navbar__overlay {

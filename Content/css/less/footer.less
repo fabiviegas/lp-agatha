@@ -6,28 +6,51 @@
     background-image: url('../img/bg-2.webp');
     background-repeat: no-repeat;
     background-size: cover;
-    
 
-    .footer__content {
-        font-size: 18px;
-        font-weight: 500;
-        margin-bottom: 7px;
-    }
+    .is--mobile {
+        .social__links {
+            width: 200px;
 
-    address {
-        font-size: 18px;
-        font-weight: 500;
-
-        a {
-            
-            text-decoration: underline;
-            padding-top: 7px;
+            a {
+                &:hover {
+                filter: brightness(0) saturate(100%) invert(40%) sepia(5%) saturate(4239%) hue-rotate(359deg) brightness(109%) contrast(78%);
+                }
+            }
         }
-    }
-    .footer_copyright {
-        font-size: 14px;
-        font-weight: 400;
-        margin: 0;
+        
+
+        .footer__content {
+            font: 500 18px @catamaran;
+            color: @brown;
+        }
+
+        .address {
+
+            address,
+            a {
+                font: 500 18px @catamaran;
+                color: @brown;                  
+            }
+
+            a {
+                text-decoration: underline;
+                &:hover {
+                    color: @gold;
+                }
+            }
+        }
+
+        .copyrights {
+            .agatha__copyrights {
+                margin-bottom: 0;
+                font: 400 16px @catamaran;
+                color: @brown;
+            }
+
+            .logo__ark {
+                width: 120px;
+            }
+        }
     }
 
     .is--desktop {
@@ -42,17 +65,58 @@
         .is--desktop {
             display: block;
 
+            .footer__contact {
+                .footer__content {
+                    font: 500 20px @catamaran;
+                    color: @brown;
+                }
+            }
+
+            .social__footer {
+                .social__links {
+                    width: 200px;
+
+                    a {
+                        &:hover {
+                        filter: brightness(0) saturate(100%) invert(40%) sepia(5%) saturate(4239%) hue-rotate(359deg) brightness(109%) contrast(78%);
+                        }
+                    }
+                }
+            }
+
+            .address {
+
+                address,
+                a {
+                    font: 500 20px @catamaran;
+                    color: @brown;                  
+                }
+
+                a {
+                    text-decoration: underline;
+                    &:hover {
+                        color: @gold;
+                    }
+                }
+            }
+
             .copyrights {
 
                 padding-bottom: 30px; 
 
                 .agatha__copyrights {
                     margin-bottom: 0;
+                    font: 500 16px @catamaran;
+                    color: @brown;
                 }
 
-                .logo__ark {
+                .ark {
+                    display: flex;
+                    justify-content: flex-end;
 
-                    width: 100px;
+                    .logo__ark {
+                        width: 100px;
+                    }
                 }
             }
         }

@@ -4,7 +4,7 @@
 
 .banner {
 
-    background-image: url('../img/background.webp');
+    background-image: url('../img/background-mobile.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -41,6 +41,10 @@
         line-height: 20px;
         
     }
+
+    @media screen and (min-width: 768px) {
+        background-image: url('../img/background.webp');
+    }
     
 }
 
@@ -54,7 +58,7 @@
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 3px;
-        color: @gold;
+        color: @gold;        
 
         span {
            
@@ -127,59 +131,86 @@
 
     .container {
         .about__content {
-            h2 {
-                color: @gold;
-                font-family: 'Cormorant', serif;
-                font-size: 20px;
-                font-weight: 600;
-                letter-spacing: 3px;
-                text-transform: uppercase;
+            .content {
+                align-items: center;
+
+                h2 {
+                    color: @gold;
+                    font-family: 'Cormorant', serif;
+                    font-size: 20px;
+                    font-weight: 600;
+                    letter-spacing: 3px;
+                    text-transform: uppercase;
+                    text-align: center;
+                    
+                    .title__content {
+                        color: @darkgold;
+                        font-family: 'Catamaran', sans-serif;
+                        font-size: 32px;
+                        font-weight: 700; 
+                        letter-spacing: normal;
+                        text-transform: none;
+                        line-height: 40px;
+                    }
+
+                    @media screen and (min-width: 768px) {
+                        text-align: left;
+                    }
+                }
                 
-                .title__content {
-                    color: @darkgold;
+                p {
+                    color: @brown;
                     font-family: 'Catamaran', sans-serif;
-                    font-size: 32px;
-                    font-weight: 500;
-                    letter-spacing: normal;
-                    text-transform: none;
-                    line-height: 40px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 25px;
+                    text-align: center;
+                    
+                    @media screen and (min-width: 768px) {
+                        text-align: left;
+                    }
+                }
+
+                .infos {
+                    color: @vintagePink;
+                    padding-bottom: 40px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    font-family: 'Catamaran', sans-serif;
+
+                        .info__highlight {
+
+                            padding-top: 20px;
+                            text-align: center;
+                        
+                            .highlight {
+                                font-size: 46px;
+                                font-weight: 800;
+                                line-height: 20px;
+                            }
+
+                            .description {
+                                display: block;
+                                font-size: 26px;
+                                font-weight: 500;
+                                letter-spacing: 2.5px;
+                            }
+
+                            @media screen and (min-width: 768px) {
+                                text-align: left;
+                            }
+                        }
+                    @media screen and (min-width: 768px) {
+                        flex-direction: row;
+                        justify-content: space-between;
+                    }
+                }
+                
+                @media screen and (min-width: 768px) {
+                    align-items: flex-start;
                 }
             }
-            
-            p {
-                color: @brown;
-                font-family: 'Catamaran', sans-serif;
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 25px;
-                
-            }
-
-            .infos {
-                color: @vintagePink;
-                padding-bottom: 40px;
-                display: flex;
-                justify-content: space-between;
-                font-family: 'Catamaran', sans-serif;
-
-                    .info__highlight {
-
-                        padding-top: 20px;
-                    
-                        .highlight {
-                            font-size: 46px;
-                            font-weight: 800;
-                            line-height: 20px;
-                        }
-
-                        .description {
-                            display: block;
-                            font-size: 26px;
-                            font-weight: 500;
-                            letter-spacing: 2.5px;
-                        }
-                    }
-            }            
         }
     }
 
@@ -199,7 +230,7 @@
                     letter-spacing: 3px;
 
                     .title__content {
-                        font-weight: 500;
+                        font-weight: 700;
                         font-size: 38px;
                         line-height: 55px;
                         letter-spacing: normal;
@@ -227,8 +258,9 @@
 
     .container {
         background-image: linear-gradient(rgb(255, 249, 249) 100%, rgb(246, 227, 207) 0%);
-        background-size: 95%;
+        background-size: 95% 80%;
         background-repeat: no-repeat;
+        background-position: center top 0;
 
         .aboutme__title {
             color: @gold;
@@ -242,7 +274,7 @@
                 color: @darkgold;
                 font-family: 'Catamaran', sans-serif;
                 font-size: 32px;
-                font-weight: 600;
+                font-weight: 700;
                 letter-spacing: normal;
                 text-transform: none;
                 line-height: 45px;
@@ -270,28 +302,41 @@
                 letter-spacing: 3px;
 
                 .title__content {
-                    font-weight: 500;
                     font-size: 38px;
                     line-height: 55px;
                     letter-spacing: normal;
                 }
             }
         }
+
+        @media screen and (min-width: 768px) {
+            background-size: 95%;
+        }
     }
 }
 
 .cta {
     background-color: @easyPink;
-    background-image: linear-gradient(rgba(220, 185, 166, 0.1), rgba(164, 133, 92, 0.6)), url('../img/photo-conf.webp'), url('../img/bg-logo.svg'), ;
+    background-image: url('../img/photo-conf.webp'), url('../img/bg-logo.svg');
     background-repeat: no-repeat;
-    background-position: top, left, right bottom;
-    background-size: contain, 550px, 380px;
+    background-position: top 0 left 15px, bottom 0 right -30px;
+    background-size: 330px, 200px;
     .container {
         .cta__text {
             font-family: 'Catamaran', sans-serif;
             font-size: 32px;
             font-weight: 800;
             color: @darkgold;
+            padding-top: 302px; 
+            
+            @media screen and (min-width: 768px) {
+                padding-top: 48px;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            background-image: linear-gradient(rgba(220, 185, 166, 0.1), rgba(164, 133, 92, 0.6)), url('../img/photo-conf.webp'), url('../img/bg-logo.svg');
+            background-size: 550px, 380px;
         }
     }
 }
