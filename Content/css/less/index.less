@@ -165,6 +165,7 @@
                     font-weight: 400;
                     line-height: 25px;
                     text-align: center;
+                    margin-bottom: 15px;
                     
                     @media screen and (min-width: 768px) {
                         text-align: left;
@@ -178,6 +179,7 @@
                     flex-direction: column;
                     justify-content: space-between;
                     font-family: 'Catamaran', sans-serif;
+                    width: 100%;
 
                         .info__highlight {
 
@@ -287,6 +289,11 @@
             font-size: 18px;
             font-weight: 400;
             line-height: 30px;
+            margin-bottom: 30px;
+
+            @media screen and (min-width: 768px) {
+                margin-bottom: 15px;
+            }
             
         }
 
@@ -310,34 +317,47 @@
         }
 
         @media screen and (min-width: 768px) {
-            background-size: 95%;
+            background-size: 100%;
+            margin-top: 65px;
+            margin-bottom: 65px;
         }
     }
 }
 
 .cta {
     background-color: @easyPink;
-    background-image: url('../img/photo-conf.webp'), url('../img/bg-logo.svg');
+    background-image: url('../img/bg-logo.svg');
     background-repeat: no-repeat;
-    background-position: top 0 left 15px, bottom 0 right -30px;
-    background-size: 330px, 200px;
+    background-position: bottom 0 right -30px;
+    background-size: 200px;
+
     .container {
         .cta__text {
             font-family: 'Catamaran', sans-serif;
-            font-size: 32px;
+            font-size: 28px;
             font-weight: 800;
             color: @darkgold;
-            padding-top: 302px; 
-            
+            margin-bottom: 30px;
+
             @media screen and (min-width: 768px) {
-                padding-top: 48px;
+                font-size: 32px; 
+                margin-bottom: 0;
             }
         }
 
-        @media screen and (min-width: 768px) {
-            background-image: linear-gradient(rgba(220, 185, 166, 0.1), rgba(164, 133, 92, 0.6)), url('../img/photo-conf.webp'), url('../img/bg-logo.svg');
-            background-size: 550px, 380px;
+        .btn__cta {
+            @media screen and (min-width: 768px) {
+                display: flex;
+                align-items: center;
+            }
         }
+        @media screen and (min-width: 768px) {
+            padding-top: 48px;
+            padding-bottom: 48px;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        background-size: 380px;
     }
 }
 

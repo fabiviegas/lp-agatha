@@ -42,7 +42,7 @@ ul {
   padding-inline-start: 0;
 }
 p {
-  margin-bottom: 15px;
+  margin-bottom: 0;
 }
 section,
 article,
@@ -280,7 +280,7 @@ nav {
   color: #fff9f9;
 }
 .button__white {
-  display: inline-block;
+  display: block;
   border-radius: 0;
   background-color: #fff9f9;
   padding: 20px 40px;
@@ -297,6 +297,11 @@ nav {
 .button__white:hover {
   background-color: #8f7241;
   color: #fff9f9;
+}
+@media screen and (min-width: 768px) {
+  .button__white {
+    max-width: 100%;
+  }
 }
 .page__header {
   position: absolute;
@@ -690,6 +695,7 @@ nav {
   font-weight: 400;
   line-height: 25px;
   text-align: center;
+  margin-bottom: 15px;
 }
 @media screen and (min-width: 768px) {
   .about .container .about__content .content p {
@@ -703,6 +709,7 @@ nav {
   flex-direction: column;
   justify-content: space-between;
   font-family: 'Catamaran', sans-serif;
+  width: 100%;
 }
 .about .container .about__content .content .infos .info__highlight {
   padding-top: 20px;
@@ -793,6 +800,12 @@ nav {
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .about__me .container .me__content {
+    margin-bottom: 15px;
+  }
 }
 .about__me .container .photo__agatha {
   margin-top: -75px;
@@ -812,32 +825,46 @@ nav {
 }
 @media screen and (min-width: 768px) {
   .about__me .container {
-    background-size: 95%;
+    background-size: 100%;
+    margin-top: 65px;
+    margin-bottom: 65px;
   }
 }
 .cta {
   background-color: #dcb9a6;
-  background-image: url('../img/photo-conf.webp'), url('../img/bg-logo.svg');
+  background-image: url('../img/bg-logo.svg');
   background-repeat: no-repeat;
-  background-position: top 0 left 15px, bottom 0 right -30px;
-  background-size: 330px, 200px;
+  background-position: bottom 0 right -30px;
+  background-size: 200px;
 }
 .cta .container .cta__text {
   font-family: 'Catamaran', sans-serif;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 800;
   color: #523e27;
-  padding-top: 302px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .cta .container .cta__text {
-    padding-top: 48px;
+    font-size: 32px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cta .container .btn__cta {
+    display: flex;
+    align-items: center;
   }
 }
 @media screen and (min-width: 768px) {
   .cta .container {
-    background-image: linear-gradient(rgba(220, 185, 166, 0.1), rgba(164, 133, 92, 0.6)), url('../img/photo-conf.webp'), url('../img/bg-logo.svg');
-    background-size: 550px, 380px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cta {
+    background-size: 380px;
   }
 }
 .testimonials {

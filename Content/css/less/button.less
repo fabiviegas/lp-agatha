@@ -55,7 +55,7 @@
 }
 
 .button__white {
-    display: inline-block;
+    display: block;
     border-radius: 0;
     background-color: @white;
     padding: 20px 40px;
@@ -72,5 +72,9 @@
     &:hover {
         background-color: @gold;
         color: @white;        
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: 100%;
     }
 }
