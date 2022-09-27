@@ -282,7 +282,7 @@ nav {
 .button__white {
   display: block;
   border-radius: 0;
-  background-color: #fff9f9;
+  background-color: rgba(255, 255, 255, 0.6);
   padding: 20px 40px;
   color: #8f7241;
   font-size: 20px;
@@ -295,8 +295,8 @@ nav {
   max-width: 330px;
 }
 .button__white:hover {
-  background-color: #8f7241;
-  color: #fff9f9;
+  background-color: white;
+  color: #ca9d84;
 }
 @media screen and (min-width: 768px) {
   .button__white {
@@ -313,9 +313,6 @@ nav {
 }
 .page__header .is--mobile .container .logo__header img {
   width: 125px;
-}
-.page__header .is--mobile .container .navbar__hamburguer {
-  background-color: #f6e3cf;
 }
 .page__header .is--mobile .container .navbar__hamburguer img {
   width: 30px;
@@ -336,37 +333,46 @@ nav {
   overflow: hidden !important;
   transition: all linear 0.5s;
 }
+.page__header .is--mobile .container .navbar__overlay.open .overlay__logo {
+  width: 120px;
+  margin: 30px 0 0 30px;
+}
+.page__header .is--mobile .container .navbar__overlay.open .overlay__close {
+  margin: 30px 30px 0 0;
+  font-size: 30px;
+  color: #523e27;
+}
 .page__header .is--mobile .container .navbar__overlay.open .overlay__content {
   overflow-y: auto !important;
   height: 90%;
 }
-.page__header .is--mobile .container .navbar__overlay.open .overlay__content .overlay__close {
-  float: right;
-  padding: 30px 30px 10px 0;
-}
-.page__header .is--mobile .container .navbar__overlay.open .overlay__content .overlay__close i {
-  font-size: 30px;
-  color: #523e27;
-}
 .page__header .is--mobile .container .navbar__overlay.open .overlay__content .overlay__menu {
   margin: 0;
 }
+.page__header .is--mobile .container .navbar__overlay.open .overlay__content .overlay__menu .overlay__links {
+  font-family: 'Cormorant', serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
 .page__header .is--mobile .container .navbar__overlay.open .overlay__content .overlay__menu .overlay__links a {
   color: #523e27;
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 700;
 }
 .page__header .is--mobile .container .navbar__overlay.open .overlay__content .overlay__menu .overlay__button {
   padding-top: 30px;
   border-radius: 0;
-  background-image: linear-gradient(105deg, #deaa74 0%, #b98650 100%);
+  background-image: linear-gradient(180deg, #bb8261 0%, #ca9d84 100%);
   color: #f6e3cf;
+  font-family: 'Catamaran', sans-serif;
   font-size: 18px;
   font-weight: 700;
   padding: 20px 44px;
   text-transform: uppercase;
   margin-bottom: 40px;
+}
+.page__header .is--mobile .container .navbar__overlay.open .overlay__content .overlay__menu .overlay__button img {
+  margin-right: 10px;
 }
 @media screen and (min-width: 992px) {
   .page__header .is--mobile {
@@ -659,6 +665,29 @@ nav {
 .services .card:hover .card-text {
   color: #fff9f9;
 }
+.services .modal .custom__title {
+  font-family: 'Catamaran', sans-serif;
+  color: #523e27;
+}
+.services .modal .custom__text {
+  font-family: 'Catamaran', sans-serif;
+  color: #29231b;
+}
+.services .modal .modal__button {
+  padding-top: 30px;
+  border-radius: 0;
+  background-image: linear-gradient(180deg, #bb8261 0%, #ca9d84 100%);
+  color: #f6e3cf;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 20px 44px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.services .modal .modal__button img {
+  margin-right: 10px;
+}
 .about {
   background-image: linear-gradient(#f6e3cf, #fff9f9);
 }
@@ -807,9 +836,19 @@ nav {
     margin-bottom: 15px;
   }
 }
+@media screen and (min-width: 768px) {
+  .about__me .container .me__logo {
+    margin-bottom: 48px;
+  }
+}
 .about__me .container .photo__agatha {
   margin-top: -75px;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .about__me .container .btn__pink2.btn__aboutme {
+    margin-bottom: 48px;
+  }
 }
 @media screen and (min-width: 768px) {
   .about__me .container h2 {
@@ -835,7 +874,7 @@ nav {
   background-image: url('../img/bg-logo.svg');
   background-repeat: no-repeat;
   background-position: bottom 0 right -30px;
-  background-size: 200px;
+  background-size: 380px;
 }
 .cta .container .cta__text {
   font-family: 'Catamaran', sans-serif;
@@ -860,11 +899,6 @@ nav {
   .cta .container {
     padding-top: 48px;
     padding-bottom: 48px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .cta {
-    background-size: 380px;
   }
 }
 .testimonials {

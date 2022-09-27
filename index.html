@@ -44,13 +44,12 @@
                         </menu>
                         <div id="navbar__overlay" class="navbar__overlay">
                             <div class="overlay__content">
-                                <div role="button" class="overlay__close">
-                                    <i class="fa-solid fa-xmark"></i>
+                                <div class="d-flex justify-content-between">
+                                    <img class="overlay__logo" src="Content/img/logo.svg" alt="Agatha Fulcher">
+                                    <i class="fa-solid fa-xmark overlay__close"></i>
                                 </div>
                                 <div class="container d-flex flex-column align-items-center justify-content-start overlay__menu h-100">
-                                    <picture class="overlay__logo">
-                                        <img src="Content/img/logo-footer.svg" alt="logo Mussi&Ollier">
-                                    </picture>
+
                                     <nav class="overlay__links py-4">
                                         <a class="anchor1 text-center py-3" href="#services">Serviços</a>
                                         <a class="anchor2 text-center py-3" href="#about">Meu trabalho</a>
@@ -58,14 +57,15 @@
                                         <a class="anchor4 text-center py-3" href="#test">Depoimentos</a>
                                     </nav>
                                     <div class="overlay__social d-flex flex-row py-4" role="navigation" aria-label="links sociais">
-                                        <a class="px-2" href="#">
+                                        <a class="mx-3" href="#">
                                             <img src="Content/img/face-icon.svg" target="_blank" alt="Facebook Icoon">
                                         </a>
-                                        <a class="px-2" href="#">
+                                        <a class="mx-3" href="#">
                                             <img src="Content/img/insta-icon.svg" target="_blank" alt="Instagram Icon">
                                         </a>
+                                        
                                     </div>
-                                    <a href="#" class="overlay__button"><img src="Content/img/whats-icon.svg" alt="Whatsapp Icon"> Entre em Contato</a>
+                                    <a href="#" class="overlay__button"><img src="Content/img/icon-whats2.svg" alt="Whatsapp Icon"> Entre em Contato</a>
                         
                                 </div>
                             </div>
@@ -133,7 +133,9 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit delectus inventore nesciunt error pariatur earum expedita cumque qui!
                     </p>
                     
-                    <img class="mouse__icon py-4" src="Content/img/arrow-down.svg" alt="Seta Icon">
+                    <a href="#services">
+                        <img class="mouse__icon py-4" src="Content/img/arrow-down.svg" alt="Seta Icon">
+                    </a>
                 </div>
             </div>
 
@@ -185,26 +187,23 @@
             <!-- Modals -->
             <div class="modal fade" id="modalMassoterapia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
-                    <div class="modal-content rounded-0"  id="modalPrev">
+                    <div class="modal-content rounded-0"  id="modalMassoterapia">
                         <div class="modal-header modal__custom">
                             <div class="flex-grow-1 text-center title__icon">
-                                <img src="Content/img/prev-icon.svg" class="mx-auto icon__modal" alt="Previdenciário Ícone">
-                                <h5 class="modal-title custom__title" id="modalPrevidenciario">Previdenciário</h5>
+                                <img src="Content/img/spa-icon.svg" class="mx-auto icon__modal" alt="Massoterapia">
+                                <h5 class="modal-title custom__title" id="modalMassoterapia">Massoterapia</h5>
                             </div>
-                            <button type="button" class="close py-3 px-3" data-dismiss="modal" aria-label="Close">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body modal__custom custom__text text-center mx-5 py-0 px-5">
+                        <div class="modal-body custom__text text-center">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus totam culpa pariatur officiis impedit molestias nobis in nisi atque neque nam possimus ad qui ipsa sapiente esse ab, fugit deserunt. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, sunt quisquam fugiat error placeat temporibus.
                         </div>
-                        <div class="modal-footer modal__custom">
-                            <a class="button__whatsapp" href="#">
-                                <i class="fa-brands fa-whatsapp"></i>
-                                <div class="whats__modal">
-                                    <span>Fale conosco pelo</span>
-                                    <span class="sub">Whatsapp</span>
-                                </div>
+                        <div class="modal-footer">
+                            <a href="#" class="modal__button">
+                                <img src="Content/img/icon-whats2.svg" alt="Whatsapp Icon">
+                                 Entre em Contato
                             </a>
                         </div>
                     </div>
@@ -213,26 +212,23 @@
 
             <div class="modal fade" id="modalBarras" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
-                    <div class="modal-content rounded-0"  id="modalCiv">
+                    <div class="modal-content rounded-0"  id="modalPrev">
                         <div class="modal-header modal__custom">
                             <div class="flex-grow-1 text-center title__icon">
-                                <img src="Content/img/civel-icon.svg" class="mx-auto icon__modal" alt="Cível Ícone">
-                                <h5 class="modal-title custom__title" id="modalCivel">Cível</h5>
+                                <img src="Content/img/bars-icon.svg" class="mx-auto icon__modal" alt="Barras de Access">
+                                <h5 class="modal-title custom__title" id="modalMassoterapia">Barras de Access</h5>
                             </div>
-                            <button type="button" class="close py-3 px-3" data-dismiss="modal" aria-label="Close">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body modal__custom custom__text text-center mx-5 py-0 px-5">
+                        <div class="modal-body modal__custom custom__text text-center">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus totam culpa pariatur officiis impedit molestias nobis in nisi atque neque nam possimus ad qui ipsa sapiente esse ab, fugit deserunt. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, sunt quisquam fugiat error placeat temporibus.
                         </div>
                         <div class="modal-footer modal__custom">
-                            <a class="button__whatsapp" href="#">
-                                <i class="fa-brands fa-whatsapp"></i>
-                                <div class="whats__modal">
-                                    <span>Fale conosco pelo</span>
-                                    <span class="sub">Whatsapp</span>
-                                </div>
+                            <a href="#" class="modal__button">
+                                <img src="Content/img/icon-whats2.svg" alt="Whatsapp Icon">
+                                 Entre em Contato
                             </a>
                         </div>
                     </div>
@@ -241,26 +237,23 @@
 
             <div class="modal fade" id="modalReiki" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
-                    <div class="modal-content rounded-0"  id="modalFam">
+                    <div class="modal-content rounded-0"  id="modalPrev">
                         <div class="modal-header modal__custom">
                             <div class="flex-grow-1 text-center title__icon">
-                                <img src="Content/img/familia-icon.svg" class="mx-auto icon__modal" alt="Família Ícone">
-                                <h5 class="modal-title custom__title" id="modalFamilia">Família</h5>
+                                <img src="Content/img/reiki-icon.svg" class="mx-auto icon__modal" alt="Reiki">
+                                <h5 class="modal-title custom__title" id="modalReiki">Reiki</h5>
                             </div>
-                            <button type="button" class="close py-3 px-3" data-dismiss="modal" aria-label="Close">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body modal__custom custom__text text-center mx-5 py-0 px-5">
+                        <div class="modal-body modal__custom custom__text text-center">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus totam culpa pariatur officiis impedit molestias nobis in nisi atque neque nam possimus ad qui ipsa sapiente esse ab, fugit deserunt. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, sunt quisquam fugiat error placeat temporibus.
                         </div>
                         <div class="modal-footer modal__custom">
-                            <a class="button__whatsapp" href="#">
-                                <i class="fa-brands fa-whatsapp"></i>
-                                <div class="whats__modal">
-                                    <span>Fale conosco pelo</span>
-                                    <span class="sub">Whatsapp</span>
-                                </div>
+                            <a href="#" class="modal__button">
+                                <img src="Content/img/icon-whats2.svg" alt="Whatsapp Icon">
+                                 Entre em Contato
                             </a>
                         </div>
                     </div>
@@ -269,31 +262,30 @@
 
             <div class="modal fade" id="modalCorporal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
-                    <div class="modal-content rounded-0"  id="modalTrab">
+                    <div class="modal-content rounded-0"  id="modalPrev">
                         <div class="modal-header modal__custom">
                             <div class="flex-grow-1 text-center title__icon">
-                                <img src="Content/img/trab-icon.svg" class="mx-auto icon__modal" alt="Trabalhista Ícone">
-                                <h5 class="modal-title custom__title" id="modalTrabalhista">Trabalhista</h5>
+                                <img src="Content/img/body.svg" class="mx-auto icon__modal" alt="Análise Corporal">
+                                <h5 class="modal-title custom__title" id="modalCorporal">Análise Corporal</h5>
                             </div>
-                            <button type="button" class="close py-3 px-3" data-dismiss="modal" aria-label="Close">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body modal__custom custom__text text-center mx-5 py-0 px-5">
+                        <div class="modal-body modal__custom custom__text text-center">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus totam culpa pariatur officiis impedit molestias nobis in nisi atque neque nam possimus ad qui ipsa sapiente esse ab, fugit deserunt. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, sunt quisquam fugiat error placeat temporibus.
                         </div>
                         <div class="modal-footer modal__custom">
-                            <a class="button__whatsapp" href="#">
-                                <i class="fa-brands fa-whatsapp"></i>
-                                <div class="whats__modal">
-                                    <span>Fale conosco pelo</span>
-                                    <span class="sub">Whatsapp</span>
-                                </div>
+                            <a href="#" class="modal__button">
+                                <img src="Content/img/icon-whats2.svg" alt="Whatsapp Icon">
+                                 Entre em Contato
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
+
+            
         </div>
 
         
@@ -348,7 +340,7 @@
 
     <section class="about__me py-5">
         <div class="container">
-            <div class="row py-4">
+            <div class="row pt-5">
 
                 <div class="col mx-4 d-flex flex-column align-items-center justify-content-between">
                     <h2 class="d-flex flex-column text-center aboutme__title">
@@ -359,13 +351,13 @@
                     </h2>
                     <p class="me__content text-center pb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse. Excepteur sint occaTecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                     </p>
-                    <img class="mx-auto img-fluid pt-4" src="Content/img/logo-banner.svg" alt="Agatha Fulcher Logo">
+                    <img class="mx-auto img-fluid pt-4 me__logo" src="Content/img/logo-banner.svg" alt="Agatha Fulcher Logo">
                     
                 </div>
 
                 <div class="col d-flex flex-column justify-content-between">
                     <img class="photo__agatha" src="Content/img/photo-agatha1.webp" alt="Agatha Fulcher">
-                    <a class="btn__pink2 d-flex flex-row mx-auto justify-content-between align-items-center" href="#">
+                    <a class="btn__pink2 btn__aboutme d-flex flex-row mx-auto justify-content-between align-items-center" href="#">
                         <div>
                             <img src="Content/img/icon-insta2.svg" alt="Instagram">
                         </div>
