@@ -135,6 +135,12 @@ nav {
   font-size: 36px;
   color: white;
 }
+@media screen and (min-width: 768px) {
+  .button__whatsapp--floating {
+    bottom: 20px;
+    right: 20px;
+  }
+}
 .services #modalPrev {
   background-image: url('../../Content/img/bg-prev.svg');
   background-repeat: no-repeat;
