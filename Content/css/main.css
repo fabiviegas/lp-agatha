@@ -61,63 +61,63 @@ nav {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/catamaran/v17/o-0bIpQoyXQa2RxT7-5B6Ryxs2E_6n1iPHjd1ak.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/catamaran/v18/o-0bIpQoyXQa2RxT7-5B6Ryxs2E_6n1iPHjd1ak.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Catamaran';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/catamaran/v17/o-0bIpQoyXQa2RxT7-5B6Ryxs2E_6n1iPErd1ak.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/catamaran/v18/o-0bIpQoyXQa2RxT7-5B6Ryxs2E_6n1iPErd1ak.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Catamaran';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/catamaran/v17/o-0bIpQoyXQa2RxT7-5B6Ryxs2E_6n1iPKba1ak.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/catamaran/v18/o-0bIpQoyXQa2RxT7-5B6Ryxs2E_6n1iPKba1ak.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Catamaran';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/catamaran/v17/o-0bIpQoyXQa2RxT7-5B6Ryxs2E_6n1iPJ_a1ak.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/catamaran/v18/o-0bIpQoyXQa2RxT7-5B6Ryxs2E_6n1iPJ_a1ak.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Catamaran';
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/catamaran/v17/o-0bIpQoyXQa2RxT7-5B6Ryxs2E_6n1iPPja1ak.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/catamaran/v18/o-0bIpQoyXQa2RxT7-5B6Ryxs2E_6n1iPPja1ak.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Cormorant';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/cormorant/v18/H4c2BXOCl9bbnla_nHIA47NMUjsNbCVrFhFTQ7Q.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/cormorant/v21/H4c2BXOCl9bbnla_nHIA47NMUjsNbCVrFhFTQ7Q.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Cormorant';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/cormorant/v18/H4c2BXOCl9bbnla_nHIA47NMUjsNbCVrFiNTQ7Q.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/cormorant/v21/H4c2BXOCl9bbnla_nHIA47NMUjsNbCVrFiNTQ7Q.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Cormorant';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/cormorant/v18/H4c2BXOCl9bbnla_nHIA47NMUjsNbCVrFs9UQ7Q.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/cormorant/v21/H4c2BXOCl9bbnla_nHIA47NMUjsNbCVrFs9UQ7Q.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Cormorant';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/cormorant/v18/H4c2BXOCl9bbnla_nHIA47NMUjsNbCVrFvZUQ7Q.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/cormorant/v21/H4c2BXOCl9bbnla_nHIA47NMUjsNbCVrFvZUQ7Q.ttf) format('truetype');
 }
 .button__whatsapp--floating {
   display: inline-block;
@@ -488,16 +488,59 @@ nav {
 .page__footer .is--mobile .address a:hover {
   color: #8f7241;
 }
-.page__footer .is--mobile .copyrights .agatha__copyrights {
-  margin-bottom: 0;
-  font: 400 16px 'Catamaran', sans-serif;
-  color: #29231b;
-}
-.page__footer .is--mobile .copyrights .logo__ark {
-  width: 120px;
-}
 .page__footer .is--desktop {
   display: none;
+}
+.page__footer .copyrights {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.page__footer .copyrights .agatha__copyrights {
+  margin-bottom: 20px;
+  font: 400 16px 'Catamaran', sans-serif;
+  color: #29231b;
+  text-align: center;
+}
+.page__footer .copyrights .fabi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page__footer .copyrights .fabi p {
+  font: 400 16px 'Catamaran', sans-serif;
+  color: #29231b;
+  margin-bottom: 6px;
+  text-align: center;
+}
+.page__footer .copyrights .fabi a {
+  color: #29231b;
+  font-family: 'Cormorant', serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+@media screen and (min-width: 768px) {
+  .page__footer .copyrights {
+    display: row;
+    justify-content: space-between;
+  }
+  .page__footer .copyrights .agatha__copyrights {
+    text-align: left;
+    margin-bottom: 0;
+  }
+  .page__footer .copyrights .fabi {
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+  }
+  .page__footer .copyrights .fabi p {
+    margin-bottom: 0;
+    text-align: left;
+  }
+  .page__footer .copyrights .fabi a {
+    margin-left: 10px;
+  }
 }
 @media screen and (min-width: 992px) {
   .page__footer .is--mobile {
@@ -526,21 +569,6 @@ nav {
   }
   .page__footer .is--desktop .address a:hover {
     color: #8f7241;
-  }
-  .page__footer .is--desktop .copyrights {
-    padding-bottom: 30px;
-  }
-  .page__footer .is--desktop .copyrights .agatha__copyrights {
-    margin-bottom: 0;
-    font: 500 16px 'Catamaran', sans-serif;
-    color: #29231b;
-  }
-  .page__footer .is--desktop .copyrights .ark {
-    display: flex;
-    justify-content: flex-end;
-  }
-  .page__footer .is--desktop .copyrights .ark .logo__ark {
-    width: 100px;
   }
 }
 .banner {
